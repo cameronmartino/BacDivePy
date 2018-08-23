@@ -30,4 +30,4 @@ Pendarovski, and Jörg Overmann. 2016. “BacDive – the Bacterial Diversity
 Metadatabase in 2016.” *Nucleic Acids Research* 44 (D1): D581–D585.
 [doi:10.1093/nar/gkv983](https://doi.org/10.1093/nar/gkv983).
 
-* (BacDiveR)[https://github.com/TIBHannover/BacDiveR]
+* [BacDiveR](https://github.com/TIBHannover/BacDiveR)
