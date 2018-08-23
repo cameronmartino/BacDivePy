@@ -1,0 +1,5 @@
+numpy
+coveralls
+tqdm
+requests
+coverage
