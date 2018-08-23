@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/cameronmartino/BacDivePy.svg?branch=master)](https://travis-ci.org/cameronmartino/BacDivePy)
-
+[![Coverage Status](https://coveralls.io/repos/github/cameronmartino/BacDivePy/badge.svg?branch=master)](https://coveralls.io/github/cameronmartino/BacDivePy?branch=master)
 
 # BacDivePy
 
