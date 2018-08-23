@@ -19,15 +19,15 @@ A python interface for the [Bacterial Diversity Metadatabase][BD] ([Söhngen et 
 
 ## References
 
-- Söhngen, Carola, Boyke Bunk, Adam Podstawka, Dorothea Gleim, and Jörg
+* Söhngen, Carola, Boyke Bunk, Adam Podstawka, Dorothea Gleim, and Jörg
 Overmann. 2014. “BacDive—the Bacterial Diversity Metadatabase.” *Nucleic
 Acids Research* 42 (D1): D592–D599.
 [doi:10.1093/nar/gkt1058](https://doi.org/10.1093/nar/gkt1058).
 
-- Söhngen, Carola, Adam Podstawka, Boyke Bunk, Dorothea Gleim, Anna
+* Söhngen, Carola, Adam Podstawka, Boyke Bunk, Dorothea Gleim, Anna
 Vetcininova, Lorenz Christian Reimer, Christian Ebeling, Cezar
 Pendarovski, and Jörg Overmann. 2016. “BacDive – the Bacterial Diversity
 Metadatabase in 2016.” *Nucleic Acids Research* 44 (D1): D581–D585.
 [doi:10.1093/nar/gkv983](https://doi.org/10.1093/nar/gkv983).
 
-- [BacDiveR][https://github.com/TIBHannover/BacDiveR]
+* (BacDiveR)[https://github.com/TIBHannover/BacDiveR]
