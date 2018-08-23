@@ -27,6 +27,8 @@ install:
 script:
   - source activate test_env
   - nosetests -v bacdive --with-coverage --cover-package=bacdive
+after_success:
+- coveralls
 notifications:
   webhooks:
     on_success: change
