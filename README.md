@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cameronmartino/BacDivePy.svg?branch=master)](https://travis-ci.org/cameronmartino/BacDivePy)
+
 
 # BacDivePy
 
@@ -7,12 +9,9 @@ A python interface for the [Bacterial Diversity Metadatabase][BD] ([Söhngen et 
 [DMSZ]: https://www.dsmz.de/about-us.html
 [reg]: https://bacdive.dsmz.de/api/bacdive/registration/register/
 
-
 ## Installation
 
-    To install the latest stable version, run the following command after git clone
-
-    pip install BacDivePy
+    pip install git+https://github.com/cameronmartino/BacDivePy.git
 
 ## Tutorials
 
