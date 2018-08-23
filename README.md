@@ -1,9 +1,7 @@
-[![Run Status](https://api.shippable.com/projects/5af3134a8d35310700beba7f/badge?branch=master)](https://app.shippable.com/bitbucket/ascus/bacdivepy)
-[![Coverage Badge](https://api.shippable.com/projects/5af3134a8d35310700beba7f/coverageBadge?branch=master)](https://app.shippable.com/bitbucket/ascus/bacdivepy)
 
 # BacDivePy
 
-A python interface for the [Bacterial Diversity Metadatabase][BD] ([Söhngen et al. 2014 & 2016](#references)) of the [DSMZ (German Collection of Microorganisms and Cell Cultures)][DMSZ]. BacDivePy is modeled after [BacDiveR][https://github.com/TIBHannover/BacDiveR]
+A python interface for the [Bacterial Diversity Metadatabase][BD] ([Söhngen et al. 2014 & 2016](#references)) of the [DSMZ (German Collection of Microorganisms and Cell Cultures)][DMSZ]. BacDivePy is modeled after [BacDiveR](https://github.com/TIBHannover/BacDiveR)
 
 [BD]: https://bacdive.dsmz.de/
 [DMSZ]: https://www.dsmz.de/about-us.html
