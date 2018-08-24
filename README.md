@@ -15,7 +15,7 @@ A python interface for the [Bacterial Diversity Metadatabase][BD] ([Söhngen et 
 
 ## Tutorials
 
-[Login and Example Use](https://github.com/cameronmartino/BacDivePy/blob/master/Doc/login_and_searching.ipynb)
+* [Login and Example Use](https://github.com/cameronmartino/BacDivePy/blob/master/Doc/login_and_searching.ipynb)
 
 ## References
 
