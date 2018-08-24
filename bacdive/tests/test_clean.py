@@ -23,7 +23,6 @@ class TestClean(unittest.TestCase):
         test_data=implode_fattened_df(test_data).sort_index()
         self.assertListEqual(list(truth_df.index.get_level_values('Section')), list(test_data.index.get_level_values('Section')))
         self.assertListEqual(list(truth_df.index.get_level_values('Field')), list(test_data.index.get_level_values('Field')))
-        self.assertListEqual(list(truth_df.index.get_level_values('Subsection')), list(test_data.index.get_level_values('Subsection')))
 
     def test_flatten_df(self):
 
@@ -39,7 +38,6 @@ class TestClean(unittest.TestCase):
         test_data=implode_fattened_df(test_data).sort_index()
         self.assertListEqual(list(truth_df.index.get_level_values('Section')), list(test_data.index.get_level_values('Section')))
         self.assertListEqual(list(truth_df.index.get_level_values('Field')), list(test_data.index.get_level_values('Field')))
-        self.assertListEqual(list(truth_df.index.get_level_values('Subsection')), list(test_data.index.get_level_values('Subsection')))
 
 
 
