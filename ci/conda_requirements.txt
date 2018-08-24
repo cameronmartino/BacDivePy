@@ -6,7 +6,7 @@ IPython>4.0.0
 notebook
 scipy
 matplotlib
-pandas
+pandas<=0.22.0
 seaborn
 scikit-bio
 gneiss
