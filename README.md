@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.org/cameronmartino/BacDivePy.svg?branch=master)](https://travis-ci.org/cameronmartino/BacDivePy)
+![Coverage Status](https://coveralls.io/repos/github/cameronmartino/BacDivePy/badge.svg)
 
-![cov](https://coveralls.io/repos/github/cameronmartino/BacDivePy/badge.svg?branch=master)
- 
 # BacDivePy
 
 A python interface for the [Bacterial Diversity Metadatabase][BD] ([Söhngen et al. 2014 & 2016](#references)) of the [DSMZ (German Collection of Microorganisms and Cell Cultures)][DMSZ]. BacDivePy is modeled after [BacDiveR](https://github.com/TIBHannover/BacDiveR)
