@@ -6,8 +6,11 @@ class TestBuildUrl(unittest.TestCase):
     def setUp(self):
         pass
     
-    def get_url(self):
+    def test_get_url(self):
         
+        allowed=['genus','bacdive id','species','subspecies','sequence accession number']
+        exp_1="Search can only contain letters, numbers and white-space only in the case os species and subspecies."
+        exp_2='Search type can only be: '+' '.join(allowed)
         truth_genus='https://bacdive.dsmz.de/api/bacdive/taxon/Acaricomes/'
         truth_DSMZID='https://bacdive.dsmz.de/api/bacdive/culturecollectionno/DSM 1/'
         truth_Spec='https://bacdive.dsmz.de/api/bacdive/taxon/Bacillus/halodurans/'
@@ -22,7 +25,6 @@ class TestBuildUrl(unittest.TestCase):
         self.assertEqual(truth_DSMZID, test_DSMZID)
         self.assertEqual(truth_Spec, test_Spec)
         self.assertEqual(truth_seq, test_seq)
-
 
 if __name__ == "__main__":
     unittest.main()

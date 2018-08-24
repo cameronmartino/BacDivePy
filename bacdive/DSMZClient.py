@@ -23,7 +23,7 @@ import numpy as np
 from bacdive.build_url import get_url
 from bacdive.clean import implode_fattened_df,flatten_df
 
-def retrieve(search,search_type):
+def retrieve(search,search_type): # pragma: no cover
     
     build_final=[]
     if not isinstance(search, list):
@@ -55,7 +55,7 @@ def retrieve(search,search_type):
     return pd.concat(build_final,axis=1).sort_index()
 
 
-def DSMZ_login(username, password=None, timeout=30):
+def DSMZ_login(username, password=None, timeout=30): # pragma: no cover
 
     """
     Get an authentication token for SEED web services.
@@ -110,10 +110,10 @@ def DSMZ_login(username, password=None, timeout=30):
     
     return username
 
-class AuthenticationError(Exception):
+class AuthenticationError(Exception): # pragma: no cover
     """ Exception for problem with login authen. """
 
-class Dive(object):
+class Dive(object): # pragma: no cover
     
     """ Client for DSMZ BacDive web services """
     
@@ -135,7 +135,7 @@ class Dive(object):
         return
 
 
-    def call(self, timeout=1800):
+    def call(self, timeout=1800): # pragma: no cover
         
         """ Call a server and wait for the response.
         
@@ -176,7 +176,7 @@ class Dive(object):
         return response.json()  # Get the output from the method in the response
 
 
-    def retrieve_authentication(self):
+    def retrieve_authentication(self): # pragma: no cover
         
         """ 
         Retrieve the authentication username and password from the config file.

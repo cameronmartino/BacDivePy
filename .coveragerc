@@ -9,9 +9,14 @@ branch = True
 include = */bacdive/*
 
 [report]
+show_missing = True
 exclude_lines =
-    pragma: no cover
+    print
+    raise AssertionError
     raise NotImplementedError
+    raise AssertionError
+    raise ValueError
+    pragma: no cover
     if __name__ == .__main__.:
 omit =
     */tests*
