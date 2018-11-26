@@ -3,3 +3,4 @@ coveralls
 tqdm
 requests
 coverage
+tqdm

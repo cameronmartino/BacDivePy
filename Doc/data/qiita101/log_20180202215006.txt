@@ -1,0 +1,50 @@
+Logging started at 21:50:06 on 02 Feb 2018
+QIIME version: 1.9.1
+
+qiime_config values:
+pick_otus_reference_seqs_fp	/home/qiita/.virtualenvs/qp-target-gene2/lib/python2.7/site-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+sc_queue	all.q
+pynast_template_alignment_fp	/home/qiita/.virtualenvs/qp-target-gene2/lib/python2.7/site-packages/qiime_default_reference/gg_13_8_otus/rep_set_aligned/85_otus.pynast.fasta
+cluster_jobs_fp	/home/qiita/cluster_jobs_8.py
+assign_taxonomy_reference_seqs_fp	/home/qiita/.virtualenvs/qp-target-gene2/lib/python2.7/site-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+torque_queue	friendlyq
+jobs_to_start	1
+denoiser_min_per_core	50
+assign_taxonomy_id_to_taxonomy_fp	/home/qiita/.virtualenvs/qp-target-gene2/lib/python2.7/site-packages/qiime_default_reference/gg_13_8_otus/taxonomy/97_otu_taxonomy.txt
+temp_dir	/projects/qiita_data/tmp/
+blastall_fp	blastall
+seconds_to_sleep	1
+
+parameter file values:
+parallel:jobs_to_start	1
+pick_otus:threads	5
+pick_otus:sortmerna_coverage	0.97
+pick_otus:otu_picking_method	sortmerna
+pick_otus:sortmerna_max_pos	10000
+pick_otus:similarity	0.97
+
+Input file md5 sums:
+/projects/qiita_data/Demultiplexed/4810/seqs.fna: 146873c6382c159a430ca48c28236fba
+/databases/gg/13_8/rep_set/97_otus.fasta: 50b2269712b3738afb41892bed936c29
+/databases/gg/13_8/taxonomy/97_otu_taxonomy.txt: 56ef15dccf2e931ec173f4f977ed649b
+
+Forcing --suppress_new_clusters as this is closed-reference OTU picking.
+
+Executing commands.
+
+# Pick OTUs command 
+pick_otus.py -i /projects/qiita_data/Demultiplexed/4810/seqs.fna -o /projects/qiita_data/working_dir/a6c0c841-0ab0-4957-bced-31a1d20b4c86/cr_otus/sortmerna_picked_otus -r /databases/gg/13_8/rep_set/97_otus.fasta -m sortmerna --threads 5 --sortmerna_coverage 0.97 --otu_picking_method sortmerna --sortmerna_max_pos 10000 --similarity 0.97 --suppress_new_clusters
+
+Stdout:
+
+Stderr:
+
+# Make OTU table command 
+make_otu_table.py -i /projects/qiita_data/working_dir/a6c0c841-0ab0-4957-bced-31a1d20b4c86/cr_otus/sortmerna_picked_otus/seqs_otus.txt -t /databases/gg/13_8/taxonomy/97_otu_taxonomy.txt -o /projects/qiita_data/working_dir/a6c0c841-0ab0-4957-bced-31a1d20b4c86/cr_otus/otu_table.biom 
+
+Stdout:
+
+Stderr:
+
+
+Logging stopped at 23:26:56 on 02 Feb 2018

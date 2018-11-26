@@ -21,7 +21,7 @@ import pandas as pd
 import numpy as np
 
 from bacdive.build_url import get_url
-from bacdive.clean import implode_fattened_df,flatten_df
+from bacdive.clean import clean_cat,flatten_df
 
 def retrieve(search,search_type): # pragma: no cover
     
@@ -32,11 +32,15 @@ def retrieve(search,search_type): # pragma: no cover
     for search_value in search:
         flat_dfs=[]
         url=get_url(search_value,search_type)
-        try:
-            locations=Dive(url).call()
-        except:
-            warn('no information found for: '+str(search_value))
-            continue
+
+        if search_type=='bacdive_id':
+            locations={'count': 1,'next': None,'previous': None,'results': [{'url': url}]}
+        else:
+            try:
+                locations=Dive(url).call()
+            except:
+                warn('no information found for: '+str(search_value))
+                continue
 
         if isinstance(locations, dict):
             for ulrloc in tqdm(locations['results']):
@@ -50,9 +54,12 @@ def retrieve(search,search_type): # pragma: no cover
                 df_['DSMZ_id']=[ulrloc['url'].split('/')[-2]]*df_.shape[0]
                 df_.index=(df_['DSMZ_id']+'||'+df_['Section']+'||'+df_['Subsection']+'||'+df_['Field_ID']).values
                 flat_dfs.append(df_)
-        build_final.append(implode_fattened_df(pd.concat(flat_dfs)))
-        
-    return pd.concat(build_final,axis=1).sort_index()
+        flat_dfs = pd.concat(flat_dfs)
+        flat_dfs = flat_dfs.groupby(flat_dfs.index)['Field'].apply(list)
+        build_final.append(flat_dfs)
+
+    build_final = clean_cat(pd.DataFrame(build_final).T)
+    return build_final
 
 
 def DSMZ_login(username, password=None, timeout=30): # pragma: no cover
