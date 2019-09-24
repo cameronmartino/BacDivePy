@@ -11,7 +11,6 @@
 import re
 import ast
 import os
-import pip
 from setuptools import find_packages, setup
 from setuptools.command.build_ext import build_ext as _build_ext
 
@@ -69,6 +68,7 @@ setup(name='bacdive',
       license='BSD',
       description=description,
       long_description=long_description,
+      long_description_content_type='text/markdown',
       author="BacDivePy development team",
       author_email="cameronmartino@gmail.com",
       maintainer="BacDivePy development team",
@@ -87,4 +87,6 @@ setup(name='bacdive',
           'nose >= 1.3.7',
           'scikit-bio >= 0.5.1',
           'seaborn >= 0.9.0',
-          'tqdm'],classifiers=classifiers,package_data={})
+          'tqdm'],
+      classifiers=classifiers,
+      package_data={})
