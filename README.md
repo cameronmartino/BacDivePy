@@ -11,7 +11,13 @@ A python interface for the [Bacterial Diversity Metadatabase][BD] ([Söhngen et 
 
 ## Installation
 
-    pip install git+https://github.com/cameronmartino/BacDivePy.git
+For the latest stable version
+
+`pip install bacdive`
+
+or for the latest dev. version
+
+`pip install git+https://github.com/cameronmartino/BacDivePy.git`
 
 ## Tutorials
 
