@@ -1,3 +1,21 @@
+
+#
+#
+#
+
+# The project has moved! Please use: https://github.com/JuliaHelmecke/bacdive-api
+
+
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
 [![Build Status](https://travis-ci.org/cameronmartino/BacDivePy.svg?branch=master)](https://travis-ci.org/cameronmartino/BacDivePy)
 ![Coverage Status](https://coveralls.io/repos/github/cameronmartino/BacDivePy/badge.svg)
 
